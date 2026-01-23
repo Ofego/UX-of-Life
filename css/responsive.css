@@ -1,0 +1,99 @@
+/* css/responsive.css */
+
+@media (max-width: 768px) {
+    
+    /* --- Typography --- */
+    h1, .hero-title {
+        font-size: 2.5rem !important;
+    }
+    
+    p, .hero-subtitle {
+        font-size: 1rem !important;
+    }
+
+    /* --- Navbar --- */
+    .navbar__links {
+        display: none; /* Hidden by default on mobile */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background: rgba(5, 5, 5, 0.95);
+        backdrop-filter: blur(10px);
+        padding: 40px 0;
+        border-bottom: 1px solid var(--border-dim);
+        gap: 30px;
+        align-items: center;
+    }
+
+    .navbar__links.active {
+        display: flex;
+        animation: slideDown 0.3s ease forwards;
+    }
+
+    .mobile-menu-trigger {
+        display: block;
+        font-size: 1.5rem;
+        color: var(--text-main);
+        cursor: pointer;
+    }
+
+    /* --- Home Page --- */
+    
+    /* Bento Grid: 1 Column */
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .span-2 {
+        grid-column: auto;
+    }
+
+    /* Protocol Timeline: Stack Vertically, No Left Margin */
+    .timeline {
+        padding-left: 0;
+        margin-top: 40px;
+    }
+
+    .timeline-step {
+        padding-left: 0;
+        border-left: none;
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .step-number {
+        position: relative;
+        left: 0;
+        top: 0;
+        margin-bottom: 0;
+    }
+
+    /* --- Protocols Page --- */
+    
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-card {
+        width: 100%;
+        max-width: 100%;
+        padding: 30px;
+    }
+
+    /* --- Initiate Page --- */
+    
+    /* Prevent iOS Zoom on inputs */
+    input, select, textarea {
+        font-size: 16px !important;
+    }
+
+    @keyframes slideDown {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+}

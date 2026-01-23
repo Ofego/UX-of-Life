@@ -1,0 +1,144 @@
+/* css/layout.css */
+
+/* Navbar Main Container */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--nav-height);
+    z-index: 1000;
+    
+    /* Glassmorphism Effect */
+    background: rgba(5, 5, 5, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Navbar Inner Content */
+.navbar__container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Logo Styling */
+.navbar__logo {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: -0.02em;
+    color: var(--text-main);
+    text-transform: uppercase;
+}
+
+/* Links Container */
+.navbar__links {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+/* Link Styling */
+.navbar__link {
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar__link:hover {
+    color: var(--accent-color);
+}
+
+/* Button Modifier */
+.navbar__link--button {
+    padding: 10px 24px;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    transition: all 0.3s ease;
+}
+
+.navbar__link--button:hover {
+    background: var(--accent-color);
+    color: var(--bg-main);
+}
+
+/* Mobile Toggle (Hidden by default) */
+.mobile-menu-trigger {
+    display: none;
+}
+
+/* Footer Styling */
+.footer {
+    padding: 60px 0;
+    border-top: 1px solid var(--border-dim);
+    background: var(--bg-main);
+}
+
+.footer__container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__column--left {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer__logo {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--text-main);
+}
+
+.footer__copyright {
+    font-family: var(--font-body);
+    color: var(--text-muted);
+    font-size: 0.8rem;
+}
+
+.footer__nav {
+    display: flex;
+    gap: 30px;
+}
+
+.footer__link {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+    color: #fff;
+}
+
+.footer__cta {
+    font-family: var(--font-heading);
+    color: var(--accent-color);
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.footer__cta:hover {
+    text-shadow: 0 0 10px rgba(0, 255, 148, 0.4);
+    transform: translateX(5px);
+}

@@ -1,0 +1,55 @@
+/* 1. IMPORT FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+/* 2. DEFINE THE LUXURY VARIABLES */
+:root {
+    /* The Palette */
+    --bg-main: #050505;       /* Deepest charcoal, not pure black */
+    --bg-secondary: #0F0F0F;  /* Slightly lighter for cards/sections */
+    
+    --text-main: #ECECEC;     /* Off-white (easier on eyes than #FFF) */
+    --text-muted: #888888;    /* For subtitles */
+    
+    --accent-color: #00FF94;  /* "Terminal Green" - looks sharp against dark */
+    --border-dim: #222222;    /* Subtle borders */
+
+    /* Typography */
+    --font-heading: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* Spacing */
+    --container-width: 1200px;
+    --nav-height: 80px;
+}
+
+/* 3. RESET & BASE STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased; /* Makes text look thinner/crisper on Mac */
+    overflow-x: hidden; /* Prevents side-scroll glitches */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 500;
+    letter-spacing: -0.02em; /* Tighter letter spacing looks more modern */
+}
+
+ul {
+    list-style: none;
+}
