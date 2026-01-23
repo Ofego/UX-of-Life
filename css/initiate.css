@@ -4,25 +4,26 @@
 .terminal-container {
     max-width: 600px;
     margin: 0 auto;
-    padding: 40px;
+    padding: var(--space-2xl);
     border: 1px solid var(--border-dim);
     background: rgba(5, 5, 5, 0.95);
     font-family: 'Courier New', Courier, monospace;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    box-shadow: var(--shadow-card);
+    border-radius: var(--radius-lg);
 }
 
 /* Header */
 .terminal-header {
-    margin-bottom: 40px;
+    margin-bottom: var(--space-2xl);
     border-bottom: 1px solid var(--border-dim);
-    padding-bottom: 20px;
+    padding-bottom: var(--space-lg);
 }
 
 .terminal-header h1 {
     font-family: 'Courier New', Courier, monospace;
     color: var(--accent-color);
     font-size: 1.5rem;
-    margin-bottom: 10px;
+    margin-bottom: var(--space-sm);
     text-transform: uppercase;
     letter-spacing: -1px;
 }
@@ -47,7 +48,7 @@
 .terminal-form {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: var(--space-xl);
 }
 
 .form-group {
@@ -64,8 +65,8 @@ input, select, textarea {
     font-size: 1rem;
     padding: 15px 0;
     outline: none;
-    transition: border-color 0.3s ease;
-    border-radius: 0;
+    transition: var(--transition-standard);
+    border-radius: var(--radius-sm);
 }
 
 /* Placeholder styling */
@@ -103,14 +104,15 @@ option {
     padding: 15px;
     cursor: pointer;
     text-transform: uppercase;
-    transition: all 0.2s ease;
-    margin-top: 20px;
+    transition: var(--transition-standard);
+    margin-top: var(--space-lg);
     display: block;
     width: 100%;
+    border-radius: var(--radius-sm);
 }
 
 .btn-execute:hover {
     background: var(--accent-color);
     color: var(--bg-main);
-    box-shadow: 0 0 15px rgba(0, 255, 148, 0.4);
+    box-shadow: var(--shadow-btn);
 }

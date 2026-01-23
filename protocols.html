@@ -14,7 +14,20 @@
 </head>
 <body>
 
-    <div id="nav-container"></div>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" class="navbar__logo">UX <span>OF</span> LIFE</a>
+            <div class="navbar__links">
+                <a href="index.html" class="navbar__link">Home</a>
+                <a href="protocols.html" class="navbar__link">Protocols</a>
+                <a href="manifesto.html" class="navbar__link">Manifesto</a>
+                <a href="initiate.html" class="navbar__link navbar__link--button">Initialize</a>
+            </div>
+            <div class="mobile-menu-trigger">
+                <i class="ri-menu-line"></i>
+            </div>
+        </div>
+    </nav>
 
     <main>
         <section class="protocols-container">
@@ -65,5 +78,19 @@
     <div id="footer-container"></div>
 
     <script src="js/app.js"></script>
+    <script>
+        // Navbar Scroll Effect & Mobile Toggle
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) navbar.classList.add('scrolled');
+            else navbar.classList.remove('scrolled');
+        });
+
+        const menuTrigger = document.querySelector('.mobile-menu-trigger');
+        const navLinks = document.querySelector('.navbar__links');
+        if (menuTrigger) {
+            menuTrigger.addEventListener('click', () => navLinks.classList.toggle('active'));
+        }
+    </script>
 </body>
 </html>

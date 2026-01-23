@@ -19,7 +19,7 @@
         left: 0;
         width: 100%;
         flex-direction: column;
-        background: rgba(5, 5, 5, 0.95);
+        background: rgba(10, 10, 10, 0.95);
         backdrop-filter: blur(10px);
         padding: 40px 0;
         border-bottom: 1px solid var(--border-dim);
@@ -40,6 +40,10 @@
     }
 
     /* --- Home Page --- */
+
+    .navbar {
+        height: 60px;
+    }
     
     /* Bento Grid: 1 Column */
     .bento-grid {
@@ -90,6 +94,34 @@
     /* Prevent iOS Zoom on inputs */
     input, select, textarea {
         font-size: 16px !important;
+    }
+
+    /* Features Section */
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Dashboard Mockup Mobile */
+    .dashboard-mockup {
+        height: auto;
+        flex-direction: column;
+    }
+    .mockup-sidebar {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        padding: 15px;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .mockup-traffic-lights {
+        display: none;
+    }
+    .mockup-stats-row {
+        grid-template-columns: 1fr;
+    }
+    .mockup-chart-area {
+        height: 200px;
     }
 
     @keyframes slideDown {

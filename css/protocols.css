@@ -2,19 +2,19 @@
 
 /* Page Layout */
 main {
-    padding-top: 120px;
+    padding-top: 40px;
     padding-bottom: 100px;
 }
 
 .protocols-container {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 var(--space-lg);
 }
 
 .section-header {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: var(--space-3xl);
 }
 
 .section-header h1 {
@@ -33,7 +33,7 @@ main {
 .pricing-container {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: var(--space-2xl);
     flex-wrap: wrap;
 }
 
@@ -41,12 +41,14 @@ main {
 .pricing-card {
     background: var(--bg-secondary);
     border: 1px solid var(--border-dim);
-    padding: 50px;
+    padding: var(--space-2xl);
     width: 400px;
     display: flex;
     flex-direction: column;
     position: relative;
-    transition: transform 0.3s ease;
+    transition: var(--transition-standard);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card);
 }
 
 .pricing-card:hover {
@@ -56,7 +58,7 @@ main {
 /* Highlight Card */
 .pricing-card--highlight {
     border-color: var(--accent-color);
-    box-shadow: 0 0 20px rgba(0, 255, 148, 0.1);
+    box-shadow: var(--shadow-card-hover);
 }
 
 /* Typography & Content */
@@ -64,10 +66,10 @@ main {
     display: inline-block;
     background: var(--accent-color);
     color: var(--bg-main);
-    padding: 4px 12px;
+    padding: var(--space-xs) 12px;
     font-size: 0.8rem;
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: var(--space-md);
     align-self: flex-start;
     text-transform: uppercase;
 }
@@ -75,7 +77,7 @@ main {
 .pricing-card h3 {
     font-family: var(--font-heading);
     font-size: 1.2rem;
-    margin-bottom: 10px;
+    margin-bottom: var(--space-sm);
     letter-spacing: 1px;
     text-transform: uppercase;
     color: var(--text-main);
@@ -84,29 +86,29 @@ main {
 .price {
     font-family: var(--font-heading);
     font-size: 2.5rem;
-    margin: 20px 0;
+    margin: var(--space-lg) 0;
     color: var(--text-main);
 }
 
 .description {
     color: var(--text-muted);
-    margin-bottom: 30px;
+    margin-bottom: var(--space-xl);
     font-family: var(--font-body);
     font-size: 1rem;
 }
 
 /* Feature List */
 .feature-list {
-    margin-bottom: 40px;
+    margin-bottom: var(--space-2xl);
     list-style: none;
 }
 
 .feature-list li {
-    margin-bottom: 15px;
+    margin-bottom: var(--space-md);
     color: var(--text-muted);
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: var(--space-sm);
     font-family: var(--font-body);
 }
 
@@ -136,6 +138,7 @@ main {
     color: #000000; /* Black text for contrast */
     font-weight: 600;
     border: 1px solid var(--accent-color);
+    border-radius: var(--radius-sm);
 }
 
 .pricing-card--highlight .btn-primary:hover {

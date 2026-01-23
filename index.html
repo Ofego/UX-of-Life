@@ -14,7 +14,38 @@
     </head>
 <body>
 
-    <div id="nav-container"></div>
+    <div class="ambient-background">
+        <div class="orb" style="top: 15%; left: 10%;"></div>
+        <div class="orb" style="top: 25%; left: 85%;"></div>
+        <div class="orb" style="top: 45%; left: 30%;"></div>
+        <div class="orb" style="top: 65%; left: 70%;"></div>
+        <div class="orb" style="top: 85%; left: 15%;"></div>
+        <div class="orb" style="top: 5%; left: 50%;"></div>
+        <div class="orb" style="top: 35%; left: 60%;"></div>
+        <div class="orb" style="top: 75%; left: 90%;"></div>
+        <div class="orb" style="top: 55%; left: 5%;"></div>
+        <div class="orb" style="top: 95%; left: 40%;"></div>
+        <div class="orb" style="top: 20%; left: 40%;"></div>
+        <div class="orb" style="top: 60%; left: 80%;"></div>
+        <div class="orb" style="top: 80%; left: 50%;"></div>
+        <div class="orb" style="top: 10%; left: 90%;"></div>
+        <div class="orb" style="top: 40%; left: 10%;"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" class="navbar__logo">UX <span>OF</span> LIFE</a>
+            <div class="navbar__links">
+                <a href="index.html" class="navbar__link">Home</a>
+                <a href="protocols.html" class="navbar__link">Protocols</a>
+                <a href="manifesto.html" class="navbar__link">Manifesto</a>
+                <a href="initiate.html" class="navbar__link navbar__link--button">Initialize</a>
+            </div>
+            <div class="mobile-menu-trigger">
+                <i class="ri-menu-line"></i>
+            </div>
+        </div>
+    </nav>
 
     <main>
         <section class="hero-section">
@@ -34,6 +65,55 @@
             </div>
         </section>
 
+        <section class="features-section">
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <article class="feature-card">
+                    <div class="feature-content">
+                        <i class="ri-lightbulb-flash-line feature-icon"></i>
+                        <div class="feature-text">
+                            <h3>Daily Insights</h3>
+                            <p class="feature-desc">Understand your emotional baseline with simple, daily check-ins.</p>
+                        </div>
+                    </div>
+                    <button class="feature-btn">Track</button>
+                </article>
+                <!-- Feature 2 -->
+                <article class="feature-card">
+                    <div class="feature-content">
+                        <i class="ri-radar-line feature-icon"></i>
+                        <div class="feature-text">
+                            <h3>Pattern Recognition</h3>
+                            <p class="feature-desc">Spot the hidden habits shaping your reality before they take hold.</p>
+                        </div>
+                    </div>
+                    <button class="feature-btn">Discover</button>
+                </article>
+                <!-- Feature 3 -->
+                <article class="feature-card">
+                    <div class="feature-content">
+                        <i class="ri-focus-2-line feature-icon"></i>
+                        <div class="feature-text">
+                            <h3>Goal Tracking</h3>
+                            <p class="feature-desc">Turn vague ambitions into concrete milestones you’ll actually hit.</p>
+                        </div>
+                    </div>
+                    <button class="feature-btn">Monitor</button>
+                </article>
+                <!-- Feature 4 -->
+                <article class="feature-card">
+                    <div class="feature-content">
+                        <i class="ri-book-open-line feature-icon"></i>
+                        <div class="feature-text">
+                            <h3>Reflection Tools</h3>
+                            <p class="feature-desc">Pause the noise. Reconnect with what actually matters to you.</p>
+                        </div>
+                    </div>
+                    <button class="feature-btn">Explore</button>
+                </article>
+            </div>
+        </section>
+
         <section class="problem-section">
             <header class="section-header">
                 <h2>SYSTEM DIAGNOSIS</h2>
@@ -42,17 +122,17 @@
                 <article class="bento-card span-2">
                     <i class="ri-cpu-line"></i>
                     <h3>THE GLITCH</h3>
-                    <p>You optimized for metrics and deprecated your humanity. Now you have capital but no purpose.</p>
+                    <p>You’ve won the game but lost the controller. You have capital, but somewhere along the way, you deprecated your purpose. Let's fix that.</p>
                 </article>
                 <article class="bento-card">
                     <i class="ri-user-unfollow-line"></i>
                     <h3>SOCIAL LATENCY</h3>
-                    <p>Zero real connections. Networking is not friendship.</p>
+                    <p>Surrounded by people, yet completely alone? Real connection requires a new protocol, not just more networking.</p>
                 </article>
                 <article class="bento-card">
                     <i class="ri-battery-low-line"></i>
                     <h3>DOPAMINE FRIED</h3>
-                    <p>Why luxury travel feels boring. Your receptors are burnt out.</p>
+                    <p>Numb to luxury? Reset your receptors and feel the thrill of life again.</p>
                 </article>
             </div>
         </section>
@@ -60,37 +140,92 @@
         <section class="protocol-section">
             <header class="section-header">
                 <h2>THE ALGORITHM</h2>
-                <p>A 4-week sprint to patch your lifestyle.</p>
+                <p>A 4-week sprint to patch your lifestyle and reboot your reality.</p>
             </header>
             <div class="timeline">
                 <article class="timeline-step">
                     <span class="step-number">01</span>
                     <div class="step-content">
-                        <h3>Code Review</h3>
-                        <p>We analyze your calendar, spending, and social graph to find the bugs.</p>
+                        <h3>Discovery</h3>
+                        <p>We map your current lifestyle to identify exactly what's draining your energy.</p>
                     </div>
                 </article>
                 <article class="timeline-step">
                     <span class="step-number">02</span>
                     <div class="step-content">
-                        <h3>Wireframing</h3>
-                        <p>We select an archetype (The Maker, The Nomad, The Patron) that fits your personality.</p>
+                        <h3>Blueprint</h3>
+                        <p>We design a custom lifestyle architecture that aligns with your true self, not just your net worth.</p>
                     </div>
                 </article>
                 <article class="timeline-step">
                     <span class="step-number">03</span>
                     <div class="step-content">
-                        <h3>Implementation</h3>
-                        <p>We book the flights, buy the wardrobe, and script the interactions.</p>
+                        <h3>Integration</h3>
+                        <p>We handle the logistics—booking, styling, and setting the stage for change.</p>
                     </div>
                 </article>
                 <article class="timeline-step">
                     <span class="step-number">04</span>
                     <div class="step-content">
-                        <h3>Deploy</h3>
-                        <p>You execute a real-world social event. Zero latency.</p>
+                        <h3>Launch</h3>
+                        <p>Step into your new reality with a curated event. No latency, just life.</p>
                     </div>
                 </article>
+            </div>
+        </section>
+
+        <section class="dashboard-preview-section">
+            <header class="section-header">
+                <h2>Your Life, Organized</h2>
+                <p>Manage, track, and reflect on your experiences in one beautiful dashboard.</p>
+            </header>
+            
+            <div class="dashboard-mockup">
+                <!-- Mockup Sidebar -->
+                <div class="mockup-sidebar">
+                    <div class="mockup-traffic-lights">
+                        <div class="mockup-dot red"></div>
+                        <div class="mockup-dot yellow"></div>
+                        <div class="mockup-dot green"></div>
+                    </div>
+                    <div class="mockup-nav-item active"></div>
+                    <div class="mockup-nav-item"></div>
+                    <div class="mockup-nav-item"></div>
+                    <div class="mockup-nav-item"></div>
+                </div>
+                
+                <!-- Mockup Main Content -->
+                <div class="mockup-main">
+                    <div class="mockup-header">
+                        <div class="mockup-search"></div>
+                        <div class="mockup-avatar"></div>
+                    </div>
+                    
+                    <div class="mockup-stats-row">
+                        <div class="mockup-stat-card"></div>
+                        <div class="mockup-stat-card"></div>
+                        <div class="mockup-stat-card"></div>
+                    </div>
+                    
+                    <div class="mockup-chart-area">
+                        <div class="mockup-chart-grid"></div>
+                        <div class="mockup-chart-line"></div>
+                        <div class="mockup-data-point p1"></div>
+                        <div class="mockup-data-point p2"></div>
+                        <div class="mockup-data-point p3"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-card">
+                <h2 class="cta-headline">Ready to Reboot?</h2>
+                <p class="cta-subtext">
+                    The system is waiting. Initialize your transformation today and start living the life you actually designed.
+                </p>
+                <a href="initiate.html" class="cta-btn">Begin Your Journey</a>
+                <p class="cta-note">Free to start, no commitment</p>
             </div>
         </section>
     </main>
@@ -99,6 +234,20 @@
 
     <script src="js/app.js"></script> 
     <script src="js/hero-canvas.js"></script>
+    <script>
+        // Navbar Scroll Effect & Mobile Toggle
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) navbar.classList.add('scrolled');
+            else navbar.classList.remove('scrolled');
+        });
+
+        const menuTrigger = document.querySelector('.mobile-menu-trigger');
+        const navLinks = document.querySelector('.navbar__links');
+        if (menuTrigger) {
+            menuTrigger.addEventListener('click', () => navLinks.classList.toggle('active'));
+        }
+    </script>
 
 </body>
 </html>
