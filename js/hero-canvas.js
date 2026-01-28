@@ -1,5 +1,6 @@
 // js/hero-canvas.js
 
+/* DISABLED DUE TO PERFORMANCE
 const canvas = document.getElementById('hero-canvas');
 const ctx = canvas.getContext('2d');
 
@@ -159,3 +160,4 @@ window.addEventListener('mouseout',
 
 init();
 animate();
+*/

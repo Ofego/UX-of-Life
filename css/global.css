@@ -43,8 +43,8 @@
     --shadow-border: 0 0 1px 1px rgba(16, 185, 129, 0.3);
 
     /* Glassmorphism */
-    --glass-bg: rgba(26, 26, 26, 0.7);
-    --glass-blur: blur(12px);
+    --glass-bg: rgba(26, 26, 26, 0.95);
+    --glass-blur: none;
     --glass-border: 1px solid rgba(255, 255, 255, 0.1);
 
     /* Transitions */
@@ -98,6 +98,7 @@ ul {
     pointer-events: none;
 }
 
+/* DISABLED DUE TO PERFORMANCE
 .orb {
     position: absolute;
     width: 400px;
@@ -106,16 +107,16 @@ ul {
     border-radius: 50%;
     opacity: 0.4;
     transform-origin: center center;
-    animation: floatOrb 45s infinite ease-in-out;
+    animation: none;
 }
 
-/* Varying speeds and delays for natural feel */
+Varying speeds and delays for natural feel
 .orb:nth-child(2n) { animation-duration: 55s; animation-delay: -5s; }
 .orb:nth-child(3n) { animation-duration: 35s; animation-delay: -10s; }
 .orb:nth-child(4n) { animation-duration: 60s; animation-delay: -15s; }
 .orb:nth-child(5n) { animation-duration: 40s; animation-delay: -20s; }
 
-/* Varying sizes */
+Varying sizes
 .orb:nth-child(odd) { width: 300px; height: 300px; }
 .orb:nth-child(3n) { width: 500px; height: 500px; opacity: 0.3; }
 
@@ -133,3 +134,4 @@ ul {
         transform: translate(0, 0) scale(1);
     }
 }
+*/

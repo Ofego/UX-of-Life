@@ -10,8 +10,8 @@
     
     /* Glassmorphism Effect */
     background: var(--glass-bg);
-    backdrop-filter: var(--glass-blur);
-    -webkit-backdrop-filter: var(--glass-blur);
+    /* DISABLED DUE TO PERFORMANCE backdrop-filter: var(--glass-blur); */
+    /* DISABLED DUE TO PERFORMANCE -webkit-backdrop-filter: var(--glass-blur); */
     border-bottom: var(--glass-border);
     transition: var(--transition-standard);
 }
@@ -191,8 +191,8 @@
     width: 380px;
     height: 500px;
     background: var(--glass-bg);
-    backdrop-filter: var(--glass-blur);
-    -webkit-backdrop-filter: var(--glass-blur);
+    /* DISABLED DUE TO PERFORMANCE backdrop-filter: var(--glass-blur); */
+    /* DISABLED DUE TO PERFORMANCE -webkit-backdrop-filter: var(--glass-blur); */
     border: var(--glass-border);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-card);
@@ -296,15 +296,17 @@
 }
 
 /* Pulsing Animation for 'Listening' state */
-.ai-avatar-container.listening {
-    animation: pulse-glow 2s infinite;
-}
+/* .ai-avatar-container.listening {
+    DISABLED DUE TO PERFORMANCE animation: pulse-glow 2s infinite;
+} */
 
+/* DISABLED DUE TO PERFORMANCE
 @keyframes pulse-glow {
     0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
     70% { box-shadow: 0 0 0 15px rgba(16, 185, 129, 0); }
     100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
 }
+*/
 
 .ai-video-feed {
     width: 100%;

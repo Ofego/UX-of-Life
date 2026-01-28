@@ -51,10 +51,6 @@ main {
     box-shadow: var(--shadow-card);
 }
 
-.pricing-card:hover {
-    transform: translateY(-5px);
-}
-
 /* Highlight Card */
 .pricing-card--highlight {
     border-color: var(--accent-color);
